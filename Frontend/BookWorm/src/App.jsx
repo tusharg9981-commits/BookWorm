@@ -9,12 +9,9 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Login />} />
-
         <Route path="/register" element={<div>Register Page</div>} />
         <Route path="/forgot-password" element={<div>Forgot Password Page</div>} />
-
         <Route path="/home" element={<div>Home Page</div>} />
-
         <Route path="/myshelf" element={<MyShelf />} />
         <Route path="/mylibrary" element={<MyLibrary />} />
       </Routes>

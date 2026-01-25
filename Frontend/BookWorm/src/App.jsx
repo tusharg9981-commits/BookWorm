@@ -1,20 +1,26 @@
-import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Register from "./Components/Register";
+import Cart from "./Components/Cart";
+import Layout from "./Components/Layout";
+import Home from "./Components/Home";
 import Login from "./Components/Login";
 import MyShelf from "./Components/MyShelf";
 import MyLibrary from "./Components/MyLibrary";
 
-export default function App() {
+function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Login />} />
-        <Route path="/register" element={<div>Register Page</div>} />
+        <Route path="/" element={<Register />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/forgot-password" element={<div>Forgot Password Page</div>} />
-        <Route path="/home" element={<div>Home Page</div>} />
         <Route path="/myshelf" element={<MyShelf />} />
-        <Route path="/mylibrary" element={<MyLibrary />} />
+        <Route path="/mylibrary" element={<MyLibrary />} />                                        
+        <Route path="/home" element={<Layout> <Home /> </Layout>} />
+        <Route path="/cart" element={<Layout> <Cart /> </Layout>} />
       </Routes>
     </BrowserRouter>
   );
 }
+
+export default App;

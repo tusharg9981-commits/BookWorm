@@ -29,7 +29,7 @@ export default function Cart() {
                 <span className="save">Save for Later</span>
               </div>
             </div>
-            <div className="item-price">$14.99</div>
+            <div className="item-price">₹1,249</div>
           </div>
 
           {/* ITEM 2 */}
@@ -49,7 +49,7 @@ export default function Cart() {
                 <span className="save">Save for Later</span>
               </div>
             </div>
-            <div className="item-price">$5.00</div>
+            <div className="item-price">₹415</div>
           </div>
         </div>
 
@@ -59,17 +59,17 @@ export default function Cart() {
 
           <div className="summary-row">
             <span>Subtotal</span>
-            <span>$39.99</span>
+            <span>₹3,319</span>
           </div>
 
           <div className="summary-row discount">
             <span>Rental Discount</span>
-            <span>- $20.00</span>
+            <span>- ₹1,660</span>
           </div>
 
           <div className="summary-total">
             <span>Total</span>
-            <span>$19.99</span>
+            <span>₹1,659</span>
           </div>
 
           <button className="primary-btn">

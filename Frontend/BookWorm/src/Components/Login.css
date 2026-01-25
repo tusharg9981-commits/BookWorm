@@ -7,6 +7,14 @@
      --border: #e5e0dc;
  }
 
+ :root.dark {
+     --bg-light: #1a1a1a;
+     --card-light: #2a2a2a;
+     --text-main: #ffffff;
+     --text-muted: #cccccc;
+     --border: #444444;
+ }
+
  /* FIX: ensure full viewport context */
  html,
  body {

@@ -18,7 +18,6 @@ export default function MyLibrary() {
             cover:
                 "https://images.unsplash.com/photo-1541963463532-d68292c34b19?q=80&w=400&auto=format&fit=crop",
             btn1: "Read Again",
-            btn2: "Lend",
             disabled2: false,
         },
         {
@@ -101,36 +100,12 @@ export default function MyLibrary() {
         if (activeTab === "ebooks") return books.filter((b) => b.type === "ebook");
         if (activeTab === "audio") return books.filter((b) => b.type === "audio");
         if (activeTab === "rented") return books.filter((b) => b.status === "rented");
-        if (activeTab === "lended") return books.filter((b) => b.status === "lended");
+        
         return books;
     }, [activeTab, books]);
 
     return (
         <div className="lib-page">
-            {/* NAVBAR */}
-            <div className="lib-navbar">
-                <div className="lib-navbar-inner">
-                    <div className="brand">
-                        <div className="logo">📚</div>
-                        Bookworm
-                    </div>
-
-                    <div className="nav-links">
-                        <Link to="/home">Discover</Link>
-                        <Link to="/mylibrary" className="active">
-                            My Library
-                        </Link>
-                        <Link to="/myshelf">My Shelf</Link>
-                    </div>
-
-                    <div className="nav-actions">
-                        <button className="icon-btn" title="Search">🔍</button>
-                        <button className="icon-btn" title="Notifications">🔔</button>
-                        <button className="icon-btn" title="Profile">👤</button>
-                    </div>
-                </div>
-            </div>
-
             {/* MAIN */}
             <div className="lib-container">
                 <h1 className="lib-title">My Library</h1>

@@ -6,6 +6,13 @@
   --text-muted: #81716a;
 }
 
+:root.dark {
+  --bg-light: #1a1a1a;
+  --card-light: #2a2a2a;
+  --text-main: #ffffff;
+  --text-muted: #cccccc;
+}
+
 /* PAGE */
 .cart-page {
   min-height: 100vh;
@@ -51,7 +58,7 @@
   display: flex;
   gap: 20px;
   padding: 20px 0;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--border);
   color: var(--text-main);
 }
 
@@ -80,7 +87,7 @@
 /* BADGES */
 .badge {
   display: inline-block;
-  background: #eee;
+  background: var(--border);
   padding: 4px 10px;
   border-radius: 20px;
   font-size: 12px;

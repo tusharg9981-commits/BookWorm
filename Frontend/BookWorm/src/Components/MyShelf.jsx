@@ -15,7 +15,7 @@ export default function MyShelf() {
             cover:
                 "https://images.unsplash.com/photo-1541963463532-d68292c34b19?q=80&w=400&auto=format&fit=crop",
             btn1: "Read Again",
-            btn2: "Lend",
+            btn2: "",
             disabled2: true,
         },
         {
@@ -86,30 +86,6 @@ export default function MyShelf() {
 
     return (
         <div className="shelf-page">
-            {/* TOP NAV */}
-            <div className="shelf-navbar">
-                <div className="shelf-navbar-inner">
-                    <div className="brand">
-                        <div className="logo">📚</div>
-                        Bookworm
-                    </div>
-
-                    <div className="nav-links">
-                        <Link to="/home">Discover</Link>
-                        <Link to="/library">Library</Link>
-                        <Link to="/myshelf" className="active">
-                            My Shelf
-                        </Link>
-                    </div>
-
-                    <div className="nav-actions">
-                        <button className="icon-btn">🔍</button>
-                        <button className="icon-btn">🔔</button>
-                        <button className="icon-btn">👤</button>
-                    </div>
-                </div>
-            </div>
-
             {/* MAIN */}
             <div className="shelf-container">
                 <h1 className="shelf-title">My Shelf</h1>

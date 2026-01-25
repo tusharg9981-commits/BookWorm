@@ -6,6 +6,13 @@
   --text-muted: #81716a;
 }
 
+:root.dark {
+  --bg-light: #1a1a1a;
+  --card-light: #2a2a2a;
+  --text-main: #ffffff;
+  --text-muted: #cccccc;
+}
+
 /* FIX: ensure full viewport context */
 html, body {
   width: 100%;
@@ -110,15 +117,15 @@ body {
   width: 100%;
   padding: 15px 18px;
   border-radius: 12px;
-  border: 1px solid #ddd;
+  border: 1px solid var(--border);
   margin-bottom: 18px;
   font-size: 15px;
-  background: #f2f2f2;
+  background: var(--card-light);
   color: var(--text-main);
 }
 
 .register-form input::placeholder {
-  color: #999;
+  color: var(--text-muted);
 }
 
 .register-form input:focus {
@@ -166,8 +173,8 @@ body {
   flex: 1;
   padding: 13px;
   border-radius: 12px;
-  border: 1px solid #ddd;
-  background: white;
+  border: 1px solid var(--border);
+  background: var(--card-light);
   cursor: pointer;
   font-weight: 500;
   color: var(--text-main);

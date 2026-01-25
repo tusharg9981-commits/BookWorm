@@ -25,7 +25,7 @@
 }
 
 .chip {
-  background: #eee;
+  background: var(--border);
   padding: 4px 10px;
   border-radius: 20px;
 }
@@ -56,7 +56,7 @@
 
 .book-img {
   height: 180px;
-  background: #ddd;
+  background: var(--border);
   border-radius: 12px;
   margin-bottom: 12px;
 }
@@ -70,19 +70,64 @@
   color: var(--text-muted);
 }
 
-.price {
-  font-weight: 600;
+.price-section {
   margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
 }
 
-.book-card button {
-  background: var(--primary);
-  color: white;
-  border: none;
-  padding: 10px;
-  width: 100%;
+.original-price {
+  font-size: 14px;
+  color: var(--text-muted);
+  text-decoration: line-through;
+  text-decoration-color: #e74c3c;
+  text-decoration-thickness: 2px;
+}
+
+.discounted-price {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.button-group {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.add-to-cart-btn {
+  flex: 1;
+  background: transparent;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  padding: 10px 12px;
   border-radius: 10px;
   cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.add-to-cart-btn:hover {
+  background: var(--primary);
+  color: white;
+}
+
+.buy-now-btn {
+  flex: 1;
+  background: var(--primary);
+  color: white;
+  border: 2px solid var(--primary);
+  padding: 10px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.buy-now-btn:hover {
+  background: #a65d3b;
 }
 
 /* MOBILE */
@@ -94,4 +139,13 @@
   .book-grid {
     grid-template-columns: 1fr 1fr;
   }
+}
+
+/* Dark mode variables */
+:root.dark {
+  --bg-light: #1a1a1a;
+  --card-light: #2a2a2a;
+  --text-main: #ffffff;
+  --text-muted: #cccccc;
+  --border: #444444;
 }

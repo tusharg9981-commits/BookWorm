@@ -56,9 +56,6 @@ export default function Login() {
                             <p className="auth-desc">Login to access your curated collection.</p>
                         </div>
 
-                        <Link className="auth-top-link" to="/register">
-                            Register
-                        </Link>
                     </div>
 
                     <form className="auth-form" onSubmit={handleSubmit}>

@@ -1,5 +1,5 @@
 .bw-footer {
-  background: white;
+  background: var(--card-light);
   padding: 60px 80px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -36,7 +36,7 @@
   flex: 1;
   padding: 8px 12px;
   border-radius: 8px 0 0 8px;
-  border: 1px solid #ddd;
+  border: 1px solid var(--border);
   font-size: 14px;
 }
 
@@ -54,4 +54,13 @@
   .bw-footer {
     grid-template-columns: 1fr 1fr;
   }
+}
+
+/* Dark mode variables */
+:root.dark {
+  --bg-light: #1a1a1a;
+  --card-light: #2a2a2a;
+  --text-main: #ffffff;
+  --text-muted: #cccccc;
+  --border: #444444;
 }

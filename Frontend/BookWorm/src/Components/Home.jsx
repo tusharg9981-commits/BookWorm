@@ -33,8 +33,14 @@ export default function Home() {
               <div className="book-img"></div>
               <h4>The Silent Echo</h4>
               <p>by Elena Ferrante</p>
-              <div className="price">$14.99</div>
-              <button>Buy Now</button>
+              <div className="price-section">
+                <div className="original-price">₹1,299</div>
+                <div className="discounted-price">₹899</div>
+              </div>
+              <div className="button-group">
+                <button className="add-to-cart-btn">Add to Cart</button>
+                <button className="buy-now-btn">Buy Now</button>
+              </div>
             </div>
           ))}
         </section>
